@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ptype:</strong>
+  <%= @c_product.ptype %>
+</p>
+
+<p>
+  <strong>Cstatus:</strong>
+  <%= @c_product.cstatus %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @c_product.user %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @c_product.Nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @c_product.Descripcion %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @c_product.Marca %>
+</p>
+
+<%= link_to 'Edit', edit_c_product_path(@c_product) %> |
+<%= link_to 'Back', c_products_path %>

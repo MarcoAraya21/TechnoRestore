@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Resources</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Reparation</th>
+      <th>Product</th>
+      <th>Fecha</th>
+      <th>Cantidad</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @resources.each do |resource| %>
+      <tr>
+        <td><%= resource.reparation %></td>
+        <td><%= resource.product %></td>
+        <td><%= resource.Fecha %></td>
+        <td><%= resource.Cantidad %></td>
+        <td><%= link_to 'Show', resource %></td>
+        <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
+        <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Resource', new_resource_path %>

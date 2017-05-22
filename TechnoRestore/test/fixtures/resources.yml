@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reparation: one
+  product: one
+  Fecha: 2017-05-22 00:26:20
+  Cantidad: 1
+
+two:
+  reparation: two
+  product: two
+  Fecha: 2017-05-22 00:26:20
+  Cantidad: 1

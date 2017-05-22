@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  cproduct: one
+  Description: MyText
+  FechaI: 2017-05-22 00:21:14
+  FechaF: 2017-05-22 00:21:14
+  PrecioBase: 1
+  PrecioFinal: 1
+
+two:
+  user: two
+  cproduct: two
+  Description: MyText
+  FechaI: 2017-05-22 00:21:14
+  FechaF: 2017-05-22 00:21:14
+  PrecioBase: 1
+  PrecioFinal: 1

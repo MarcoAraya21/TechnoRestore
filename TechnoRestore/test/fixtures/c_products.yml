@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ptype: one
+  cstatus: one
+  user: one
+  Nombre: MyString
+  Descripcion: MyText
+  Marca: MyString
+
+two:
+  ptype: two
+  cstatus: two
+  user: two
+  Nombre: MyString
+  Descripcion: MyText
+  Marca: MyString

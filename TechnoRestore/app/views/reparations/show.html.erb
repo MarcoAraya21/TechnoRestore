@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @reparation.user %>
+</p>
+
+<p>
+  <strong>Cproduct:</strong>
+  <%= @reparation.cproduct %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @reparation.Description %>
+</p>
+
+<p>
+  <strong>Fechai:</strong>
+  <%= @reparation.FechaI %>
+</p>
+
+<p>
+  <strong>Fechaf:</strong>
+  <%= @reparation.FechaF %>
+</p>
+
+<p>
+  <strong>Preciobase:</strong>
+  <%= @reparation.PrecioBase %>
+</p>
+
+<p>
+  <strong>Preciofinal:</strong>
+  <%= @reparation.PrecioFinal %>
+</p>
+
+<%= link_to 'Edit', edit_reparation_path(@reparation) %> |
+<%= link_to 'Back', reparations_path %>

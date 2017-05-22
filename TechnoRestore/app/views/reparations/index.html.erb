@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Reparations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Cproduct</th>
+      <th>Description</th>
+      <th>Fechai</th>
+      <th>Fechaf</th>
+      <th>Preciobase</th>
+      <th>Preciofinal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reparations.each do |reparation| %>
+      <tr>
+        <td><%= reparation.user %></td>
+        <td><%= reparation.cproduct %></td>
+        <td><%= reparation.Description %></td>
+        <td><%= reparation.FechaI %></td>
+        <td><%= reparation.FechaF %></td>
+        <td><%= reparation.PrecioBase %></td>
+        <td><%= reparation.PrecioFinal %></td>
+        <td><%= link_to 'Show', reparation %></td>
+        <td><%= link_to 'Edit', edit_reparation_path(reparation) %></td>
+        <td><%= link_to 'Destroy', reparation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reparation', new_reparation_path %>

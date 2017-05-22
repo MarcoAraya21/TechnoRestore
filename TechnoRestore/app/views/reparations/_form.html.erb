@@ -1,0 +1,52 @@
+<%= form_for(reparation) do |f| %>
+  <% if reparation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(reparation.errors.count, "error") %> prohibited this reparation from being saved:</h2>
+
+      <ul>
+      <% reparation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cproduct_id %>
+    <%= f.text_field :cproduct_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Description %>
+    <%= f.text_area :Description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :FechaI %>
+    <%= f.datetime_select :FechaI %>
+  </div>
+
+  <div class="field">
+    <%= f.label :FechaF %>
+    <%= f.datetime_select :FechaF %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PrecioBase %>
+    <%= f.number_field :PrecioBase %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PrecioFinal %>
+    <%= f.number_field :PrecioFinal %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

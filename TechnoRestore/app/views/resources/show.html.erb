@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reparation:</strong>
+  <%= @resource.reparation %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @resource.product %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @resource.Fecha %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @resource.Cantidad %>
+</p>
+
+<%= link_to 'Edit', edit_resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>
